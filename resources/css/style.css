@@ -38,12 +38,9 @@ body {
     font-size: 18px;
     color: black;
     text-align: left;
-}
-
-* {
-    padding: 0;
     margin: 0;
 }
+
 
 /* HEADER */
 
@@ -73,6 +70,8 @@ header {
 ul {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -161,12 +160,13 @@ a {
 }
 
 
-/* INFORMATION LEFT */
+/* INFORMATION */
 .information-container {
     display: flex;
     background-color: rgb(245, 245, 245);
 }
 
+/* INFORMATION LEFT */
 .information-left {
     display: inline-flex;
     flex-direction: column;
@@ -178,11 +178,9 @@ a {
     width: 100%;
 }
 
-.information-left h2 {
+h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-top: 32px;
-    margin-bottom: 24px;
 }
 
 .information-left p {
@@ -195,7 +193,7 @@ a {
     display: inline-flex;
     flex-direction: column;
     width: 40%;
-    margin-top: 16px;
+    padding-top: 16px;
     border-left: 1px solid rgb(146, 146, 146);
 }
 
@@ -220,7 +218,7 @@ a {
     width: 65%;
     flex-direction: column;
     justify-content: center;
-    margin: 16px auto;
+    margin: 8px auto;
 }
 
 .content h4,
@@ -234,11 +232,51 @@ a {
     font-size: 15px;
 }
 
+
+/*  COURSES */
+.courses {
+    background-color: rgb(196, 196, 196);
+    padding: 32px 72px;   
+}
+
+.courses h2 {
+    text-align: center;
+}
+
+.courses-grid {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-content: center;
+}
+
+.course {
+    background-color: rgb(250, 250, 250);
+}
+
+
+.course-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.course-information {
+    margin: 16px;
+}
+
+.course-information p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
 /* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px thick rgb(51, 51, 51);
+    border-top: 1px solid rgba(51, 51, 51, 0.2);
 }
 
 .footer-left,
@@ -251,6 +289,7 @@ footer {
 .footer-right a {
     margin-left: 22px;
 }
+
 
 
 @media only screen and (max-width: 760px) {
@@ -301,5 +340,11 @@ footer {
     .everyday .button {
         margin-bottom: 32px;
         max-width: 100%;
+    }
+
+
+    /* FOOTER */
+    .footer-right {
+        display: none;
     }
 }
