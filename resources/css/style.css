@@ -342,7 +342,6 @@ footer {
     }
 
     .everyday .button {
-        margin-bottom: 32px;
         max-width: 100%;
     }
 
@@ -357,11 +356,14 @@ footer {
     }
 
     .information-right {
-        display: block;
         width: 100%;
         border-left: none;
         padding: 0;
         border-top: 1px solid rgba(146, 146, 146, 0.2);
+    }
+
+    .information-content .content {
+        width: 80%;
     }
 
     .desktop-image {
@@ -377,5 +379,33 @@ footer {
     /* FOOTER */
     .footer-right {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .information-left {
+        display: none;
+    }
+
+    .information-right {
+        border-top: 0;
+    }
+
+    .information-content {
+        display: block;
+        padding: 0;
+    }
+
+    .information-content .content {
+        margin-left: 32px;
+    }
+
+    .information-image {
+        display: block;
+        max-width: 100%;
+    }
+
+    .guest {
+        margin-bottom: 16px;
     }
 }
