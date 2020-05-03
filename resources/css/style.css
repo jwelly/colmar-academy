@@ -213,6 +213,10 @@ h2 {
     align-self: flex-start;
 }
 
+.mobile-image {
+    display: none;
+}
+
 .information-content .content {
     display: flex;
     width: 65%;
@@ -341,6 +345,33 @@ footer {
         margin-bottom: 32px;
         max-width: 100%;
     }
+
+    /* KEEP PRACTISING */
+    .information-container {
+        display: block;
+    }
+
+    .information-left {
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .information-right {
+        display: block;
+        width: 100%;
+        border-left: none;
+        padding: 0;
+        border-top: 1px solid rgba(146, 146, 146, 0.2);
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }    
+
 
 
     /* FOOTER */
