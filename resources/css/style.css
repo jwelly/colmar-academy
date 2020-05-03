@@ -211,7 +211,8 @@ a {
 }
 
 .information-image img {
-    max-width: 100%;
+    width: 100%;
+    align-self: flex-start;
 }
 
 .information-content .content {
@@ -219,6 +220,7 @@ a {
     width: 65%;
     flex-direction: column;
     justify-content: center;
+    margin: 16px auto;
 }
 
 .content h4,
@@ -227,6 +229,28 @@ a {
     margin: 4px 0;
 }
 
+.content p,
+.content a {
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px thick rgb(51, 51, 51);
+}
+
+.footer-left,
+.footer-right {
+    display: inline-flex;
+    font-size: 12px;
+    margin: 16px 24px;
+}
+
+.footer-right a {
+    margin-left: 22px;
+}
 
 
 @media only screen and (max-width: 760px) {
