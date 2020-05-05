@@ -35,9 +35,7 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
-    font-size: 18px;
     color: black;
-    text-align: left;
     margin: 0;
 }
 
@@ -63,7 +61,8 @@ header {
     font-size: 25px;
 }
 
-.logo span {
+li span {
+    color: initial;
     font-weight: 700;
 }
 
@@ -79,6 +78,7 @@ li {
     align-items: center;
     list-style: none;
     height: 32px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* NAV BAR */
@@ -103,6 +103,8 @@ a {
     display: none;
 }
 
+
+
 /* LEARN SOMETHING */
 
 .learn-container {
@@ -125,28 +127,27 @@ a {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 360px;
+    max-width: 30%;
 }
 
 .everyday h1 {
     font-size: 40px;
     font-weight: 700;
-    margin: 12px 0;
+    margin: 0;
 }
 
 .everyday p {
     font-weight: 500;
-    margin: 12px 0;
 }
 
 .everyday input {
-    max-width: 280px;
+    max-width: 85%;
     border: none;
     color: white;
     font-size: 16px;
     padding: 8px 0;
     background-color: rgb(48, 47, 47);
-    margin: 12px 0;
+    margin: 8px 0;
 }
 
 .button {
