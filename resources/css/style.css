@@ -130,14 +130,9 @@ a {
     max-width: 30%;
 }
 
-.everyday h1 {
+h1 {
     font-size: 40px;
-    font-weight: 700;
     margin: 0;
-}
-
-.everyday p {
-    font-weight: 500;
 }
 
 .everyday input {
@@ -178,13 +173,7 @@ a {
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.information-left p {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 2rem;
 }
 
 /* INFORMATION RIGHT */
@@ -226,7 +215,7 @@ h2 {
     margin: 8px auto;
 }
 
-.content h4,
+.content h3,
 .content p,
 .content a {
     margin: 4px 0;
@@ -241,7 +230,8 @@ h2 {
 /*  COURSES */
 .courses {
     background-color: rgb(196, 196, 196);
-    padding: 32px 72px;   
+    padding: 32px 72px 72px;
+    overflow: auto;
 }
 
 .courses h2 {
@@ -280,16 +270,16 @@ h2 {
 /* THESIS */
 .thesis {
     background-color: rgb(245, 245, 245);
-}
-
-.thesis-container {
-    display: flex;
+    overflow: auto;
+    padding: 32px 0;
 }
 
 .thesis h2 {
     text-align: center;
-    padding: 32px 0;
-    margin: 0;
+}
+
+.thesis-container {
+    display: flex;
 }
 
 /* THESIS LEFT */
@@ -301,10 +291,6 @@ h2 {
 .thesis-left video {
     display: block;
     width: 100%;
-}
-
-.video-details h4 {
-    margin-bottom: 8px;
 }
 
 .video-details p {
@@ -355,12 +341,13 @@ footer {
 .footer-left,
 .footer-right {
     display: inline-flex;
-    font-size: 12px;
+    align-items: center;
+    font-size: 0.75rem;
     margin: 16px 24px;
 }
 
 .footer-right a {
-    margin-left: 22px;
+    margin-left: 1.5rem;
 }
 
 
@@ -401,7 +388,7 @@ footer {
         max-width: 100%;
     }
 
-    .everyday h1 {
+    h1 {
         margin: 0;
     }
 
@@ -466,6 +453,7 @@ footer {
     }
 }
 
+
 @media only screen and (max-width: 560px) {
     /* INFORMATION */
     .information-left {
@@ -492,6 +480,9 @@ footer {
 
 
     /* COURSES */
+    .courses {
+        padding: 0 32px 32px;
+    }
 
     .courses-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -504,6 +495,10 @@ footer {
     }
 
     /* THESIS */
+    .thesis {
+        padding: 0 0 32px;
+    }
+
     .thesis-left video {
         margin-bottom: 24px;
     }
