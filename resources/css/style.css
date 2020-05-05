@@ -248,9 +248,13 @@ h2 {
 
 .course {
     background-color: rgb(250, 250, 250);
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
+.course:hover {
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.4);
+}
 
 .course-image img {
     display: block;
